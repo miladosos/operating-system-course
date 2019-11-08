@@ -10,7 +10,7 @@ install: all
 	sudo insmod jiffies.ko
 
 test: all install
-	watch -n 1 cat /proc/jiffies
+	cat /proc/jiffies
 
 remove: all
 	sudo rmmod jiffies
